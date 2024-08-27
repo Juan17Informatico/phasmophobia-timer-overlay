@@ -28,5 +28,8 @@ class OverlayUI:
         self.label.config(text=self.timer.format_time())
         self.root.update_idletasks()
 
+    def close(self):
+        self.root.quit()  # Cierra el mainloop y termina la aplicación
+
     def run(self):
         self.root.mainloop()
